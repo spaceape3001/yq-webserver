@@ -17,3 +17,5 @@ endif()
 include(configure.cmake)
 
 add_subdirectory(3rd)
+add_subdirectory(api)
+add_subdirectory(tool)
