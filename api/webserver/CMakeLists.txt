@@ -4,8 +4,7 @@
 ##
 ################################################################################
 
-project(webserver)
-
+project(yq_webserver)
 
 add_library(${PROJECT_NAME} SHARED
     webserver.cpp
@@ -13,8 +12,8 @@ add_library(${PROJECT_NAME} SHARED
 
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
-        yq_network
-        asio
+        yq_asio
+        yq_net
 )
 
 target_include_directories(${PROJECT_NAME}
